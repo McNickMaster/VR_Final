@@ -6,11 +6,14 @@ public class DoorLock : MonoBehaviour
 {
 
     public Transform attachPoint;
+    public Animation doorAnimtion;
 
-    public float attachStrength = 200f;
+    public float attachStrength = 7f;
+    public float doorUnLockTime = 0.75f;
 
     private Transform keyTrans;
     private Vector3 keyTarget;
+    private bool locked = true;
 
 
     [SerializeField]
@@ -27,7 +30,16 @@ public class DoorLock : MonoBehaviour
     {
         if(keyTrans != null)
         {
+            keyTrans.rotation = attachPoint.rotation;
+            keyTrans.position = new Vector3(keyTrans.position.x, attachPoint.position.y, attachPoint.position.z);
             keyTrans.position = Vector3.Lerp(keyTrans.position, attachPoint.position, Time.deltaTime * attachStrength);
+
+            if(locked)
+            {
+                Invoke("OpenDoor", doorUnLockTime);
+                locked = false;
+            }
+            
         }
 
 
@@ -36,6 +48,9 @@ public class DoorLock : MonoBehaviour
 
     void AttachKey()
     {
+        keyTrans.gameObject.GetComponent<Rigidbody>().Sleep();
+        keyTrans.gameObject.GetComponent<Rigidbody>().useGravity = false;
+        keyTrans.gameObject.GetComponent<MeshCollider>().enabled = false;
     }
 
     
@@ -44,8 +59,8 @@ public class DoorLock : MonoBehaviour
     void OpenDoor()
     {
         //start sequence
-        //doorOpenAnimation.Play();
-        gameObject.SetActive(false);
+        doorAnimtion.Play();
+        //gameObject.SetActive(false);
     }
 
     bool KeyAttached()
@@ -59,8 +74,7 @@ public class DoorLock : MonoBehaviour
         if(other.gameObject.layer.Equals(14))
         {
             keyTrans = other.gameObject.transform;
-            keyTrans.gameObject.GetComponent<Rigidbody>().Sleep();
-            keyTrans.gameObject.GetComponent<MeshCollider>().enabled = false;
+            
             AttachKey();
             //particles.start();
 
