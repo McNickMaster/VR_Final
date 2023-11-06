@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DoorLock : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class DoorLock : MonoBehaviour
 
     void AttachKey()
     {
+        keyTrans.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
         keyTrans.gameObject.GetComponent<Rigidbody>().Sleep();
         keyTrans.gameObject.GetComponent<Rigidbody>().useGravity = false;
         keyTrans.gameObject.GetComponent<MeshCollider>().enabled = false;
@@ -71,7 +73,7 @@ public class DoorLock : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //key layer
-        if(other.gameObject.layer.Equals(14))
+        if(other.gameObject.CompareTag("Key"))
         {
             keyTrans = other.gameObject.transform;
             
