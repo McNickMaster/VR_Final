@@ -1,10 +1,17 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillFloor : MonoBehaviour
+public class PlayerManager : MonoBehaviour
 {
+    public static PlayerManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +24,8 @@ public class KillFloor : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void Kill()
     {
-
-        Debug.Log("axe collision has happened ");
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            PlayerManager.instance.Kill();
-        }
+        Debug.Log("owie owie owie");
     }
 }
