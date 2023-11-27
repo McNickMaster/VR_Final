@@ -11,9 +11,11 @@ public class DoorLock : MonoBehaviour
 
     public float attachStrength = 7f;
     public float doorUnLockTime = 0.75f;
+    public float unlockAffordance = 1f;
 
     private Transform keyTrans;
     private Vector3 keyTarget;
+    [SerializeField]
     private bool locked = true;
 
 
@@ -37,6 +39,7 @@ public class DoorLock : MonoBehaviour
 
             if(locked)
             {
+                Debug.Log("opening door...");
                 Invoke("OpenDoor", doorUnLockTime);
                 locked = false;
             }
@@ -52,7 +55,7 @@ public class DoorLock : MonoBehaviour
         keyTrans.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
         keyTrans.gameObject.GetComponent<Rigidbody>().Sleep();
         keyTrans.gameObject.GetComponent<Rigidbody>().useGravity = false;
-        keyTrans.gameObject.GetComponent<MeshCollider>().enabled = false;
+        keyTrans.gameObject.GetComponent<Collider>().enabled = false;
     }
 
     
@@ -67,7 +70,7 @@ public class DoorLock : MonoBehaviour
 
     bool KeyAttached()
     {
-        return keyTrans==null ? true : keyTrans.position.z - keyTarget.z <= 0.2f;
+        return keyTrans==null ? true : keyTrans.position.magnitude - keyTarget.magnitude <= unlockAffordance;
     }
 
     private void OnTriggerEnter(Collider other)
