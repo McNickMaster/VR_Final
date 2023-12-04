@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 8769625130122069710}
   m_Layer: 0
   m_Name: Key
-  m_TagString: Untagged
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,14 +278,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4332877058826094329}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -2.901, y: 1.3401109, z: 0.99293}
   m_LocalScale: {x: 0.3076376, y: 0.34192923, z: 0.3076375}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4733422457539372523}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!33 &2612380251701833856
 MeshFilter:
   m_ObjectHideFlags: 0
