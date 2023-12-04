@@ -101,20 +101,20 @@ HingeJoint:
   serializedVersion: 2
   m_UseSpring: 1
   m_Spring:
-    spring: 5
+    spring: 20
     damper: 0
-    targetPosition: -90
+    targetPosition: 120
   m_UseMotor: 0
   m_Motor:
     targetVelocity: 0
     force: 50
     freeSpin: 0
   m_UseLimits: 1
-  m_ExtendedLimits: 0
+  m_ExtendedLimits: 1
   m_UseAcceleration: 0
   m_Limits:
-    min: -70
-    max: 90
+    min: -92.93857
+    max: 105.252625
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
