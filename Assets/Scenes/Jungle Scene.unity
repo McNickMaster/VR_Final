@@ -443,7 +443,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6604526
+      value: -2.37
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -451,7 +451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7516074
+      value: 1.31
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -881,7 +881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9043121891607440045, guid: 43582df80ba0e9d47bde83d8a9eb2515, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.878965
+      value: -3.56
       objectReference: {fileID: 0}
     - target: {fileID: 9043121891607440045, guid: 43582df80ba0e9d47bde83d8a9eb2515, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5701,7 +5701,7 @@ GameObject:
   - component: {fileID: 177834530}
   - component: {fileID: 177834529}
   m_Layer: 0
-  m_Name: InvisiCube (2)
+  m_Name: InvisiCube [Wall] (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14897,7 +14897,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.839453
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22542,7 +22542,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.45945287
+      value: -1.85
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22550,7 +22550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.3216071
+      value: 2.296
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -42672,7 +42672,7 @@ GameObject:
   - component: {fileID: 1295713038}
   - component: {fileID: 1295713037}
   m_Layer: 0
-  m_Name: InvisiCube
+  m_Name: InvisiCube [Wall]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46210,7 +46210,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.839453
+      value: -1.99
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -46218,7 +46218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.9283924
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -57969,6 +57969,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1579772475}
     m_Modifications:
+    - target: {fileID: 1757806933511151849, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.33
+      objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.45945287
@@ -64693,7 +64697,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6604526
+      value: 7.01
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -64701,7 +64705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0009660721
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 7211945966252282910, guid: f35bf282cbb290e408ddc2a2608992f7, type: 3}
       propertyPath: m_LocalRotation.w
