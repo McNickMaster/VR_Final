@@ -242,7 +242,7 @@ MonoBehaviour:
   m_ClimbProvider: {fileID: 0}
   m_ClimbTransform: {fileID: 3932443091759064295}
   m_FilterInteractionByDistance: 1
-  m_MaxInteractionDistance: 0.1
+  m_MaxInteractionDistance: 0.25
   m_ClimbSettingsOverride:
     m_UseConstant: 0
     m_ConstantValue:
