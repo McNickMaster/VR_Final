@@ -8,6 +8,7 @@ public class DoorLock : MonoBehaviour
 
     public Transform attachPoint;
     public Animation doorAnimtion;
+    public AudioSource doorSound;
 
     public float attachStrength = 7f;
     public float doorUnLockTime = 0.75f;
@@ -65,6 +66,7 @@ public class DoorLock : MonoBehaviour
     {
         //start sequence
         doorAnimtion.Play();
+        doorSound.Play();
         //gameObject.SetActive(false);
     }
 
