@@ -99,7 +99,7 @@ HingeJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 3.79, y: 16.97, z: 39.105064}
   serializedVersion: 2
-  m_UseSpring: 1
+  m_UseSpring: 0
   m_Spring:
     spring: 5
     damper: 0
@@ -113,8 +113,8 @@ HingeJoint:
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
   m_Limits:
-    min: -70
-    max: 90
+    min: -75
+    max: 75
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -366,8 +366,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7618409422341613138}
-  - component: {fileID: 9147576516593976534}
   - component: {fileID: 5625658578195988643}
+  - component: {fileID: 7470214752417770151}
   m_Layer: 0
   m_Name: Axe
   m_TagString: Untagged
@@ -385,29 +385,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.79, y: 4.04, z: 3.28}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.74367, y: 0.74367, z: 0.74367}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5518508414488182746}
   - {fileID: 17918144215379780}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &9147576516593976534
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5177646905085685430}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 46aa3205def2f4f42af80978c25f9af0, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 46aa3205def2f4f42af80978c25f9af0, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 1
-  m_CullingType: 0
 --- !u!114 &5625658578195988643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +404,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e318bc7ea6bf8941abad04894637491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7470214752417770151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177646905085685430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d140c3d5e1deb469a01f39337969ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 0}
+  velocityThreshold: 200
+  swingTimer: 2
 --- !u!1 &5564169613708749447
 GameObject:
   m_ObjectHideFlags: 0

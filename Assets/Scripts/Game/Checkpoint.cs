@@ -2,16 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class Checkpoint : MonoBehaviour
 {
-    public static PlayerManager instance;
-
-    private void Awake()
-    {
-        instance = this;
-    }
-
-
+    public Transform spawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +17,11 @@ public class PlayerManager : MonoBehaviour
         
     }
 
-    public void Kill()
+    void OnTriggerEnter(Collider other)
     {
-        GameManager.instance.PlayerKill();
-        Debug.Log("owie owie owie");
+        if(other.gameObject.CompareTag("Player"))
+        {
+            GameManager.instance.SetCheckpoint(spawn);
+        }
     }
 }
