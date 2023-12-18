@@ -100,7 +100,9 @@ public class GameManager : MonoBehaviour
 
     public void Respawn()
     {
-        player.transform.position = currentCheckpoint.position + new Vector3(0, 0f, 0);
+        player.transform.position = currentCheckpoint.position;
+        deadUI.SetActive(false);
+        playerMovement.enabled = true;
     }
 
     public void LoadGame()

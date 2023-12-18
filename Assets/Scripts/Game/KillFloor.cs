@@ -26,4 +26,12 @@ public class KillFloor : MonoBehaviour
             PlayerManager.instance.Kill();
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            PlayerManager.instance.Kill();
+        }
+    }
 }
